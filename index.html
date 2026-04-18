@@ -3,203 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Pudhuvayal - New Field</title>
+    <!-- Modern Typography: Outfit -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        body {
-            background: linear-gradient(to right, #3f5efb, #fc466b);
-            color: #fff;
-            padding: 20px;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px 20px;
-            background-color: rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-        }
-
-        nav ul {
-            list-style: none;
-            display: flex;
-        }
-
-        nav ul li {
-            margin-left: 20px;
-        }
-
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-            transition: color 0.3s ease;
-        }
-
-        nav ul li a:hover {
-            color: #ffcccb;
-        }
-
-        header {
-            display: flex;
-            align-items: center;
-            margin: 50px 0;
-        }
-
-        header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-right: 20px;
-            border: 4px solid rgba(255, 255, 255, 0.6);
-        }
-
-        header div {
-            max-width: 600px;
-        }
-
-        header h1 {
-            font-size: 32px;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        header p {
-            font-size: 16px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        section {
-            margin-top: 50px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-        }
-
-        .placeholder {
-            width: 100%;
-            height: 200px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 24px;
-            color: rgba(255, 255, 255, 0.7);
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-        }
-
-        footer {
-            margin-top: 50px;
-            text-align: center;
-            font-size: 14px;
-            opacity: 0.7;
-        }
-
-        /* RESPONSIVE STYLES */
-
-        @media (max-width: 768px) {
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            nav ul li {
-                margin-left: 0;
-                margin-bottom: 10px;
-            }
-
-            header {
-                flex-direction: column;
-                align-items: center;
-                text-align: center;
-            }
-
-            header img {
-                margin-bottom: 20px;
-            }
-
-            header h1 {
-                font-size: 24px;
-            }
-
-            header p {
-                font-size: 14px;
-            }
-
-            .placeholder {
-                height: 150px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 20px;
-            }
-
-            header p {
-                font-size: 12px;
-            }
-
-            .placeholder {
-                height: 100px;
-            }
-        }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Phosphor Icons for lightweight UI icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Background Animated Blobs -->
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
 
-    <nav>
-        <div class="logo">
-            <h2>SAHAYA VALAN J</h2>
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="nav-container">
+            <h1 class="logo">Pudhuvayal <i class="ph-fill ph-plant"></i></h1>
+            <a href="#register" class="btn btn-primary">Join Waitlist</a>
         </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="./cert.html">Projects</a></li>
-            <li><a href="./cert.html">Certificates</a></li>
-            <li><a href="./login_.php">Login</a></li>
-        </ul>
     </nav>
 
-    <header>
-        <img src="mypic.jpg" alt="My Picture">
-        <div>
-            <h1>About Me</h1>
-            <p>Hello! I'm Sahayavalan, an aspiring ethical hacker with a passion for technology and security. I'm currently studying ECE at VV College and have earned 10+ certifications to further my skills in this field.</p>
-        </div>
-    </header>
+    <!-- Main Container -->
+    <main class="container">
+        
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content fade-up">
+                <div class="badge glass">🌱 Tamil Nadu's Agri-Tech Marketplace</div>
+                <h2 class="hero-title">Direct from your <span class="highlight">Local Field</span> <br/>to your Home.</h2>
+                <p class="hero-subtitle">
+                    Pudhuvayal eliminates middlemen, giving buyers farm-fresh produce and farmers the fair prices they deserve. Step into the new era of hyper-local commerce.
+                </p>
+                <div class="hero-stats glass">
+                    <div class="stat">
+                        <i class="ph ph-users-three"></i>
+                        <span>Zero Middlemen</span>
+                    </div>
+                    <div class="stat">
+                        <i class="ph ph-map-pin-line"></i>
+                        <span>Hyper-Local</span>
+                    </div>
+                    <div class="stat">
+                        <i class="ph ph-shield-check"></i>
+                        <span>Verified Farmers</span>
+                    </div>
+                </div>
+            </div>
 
-    <section>
-        <div class="placeholder">
-            <img src="./img/vvcert.jpg" alt="Picture 1" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
-        </div>
-        <div class="placeholder">
-            <img src="./img/nss.jpg" alt="Picture 2" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
-        </div>
-        <div class="placeholder">
-            <img src="./img/boys.jpg" alt="Picture 3" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
-        </div>
-        <div class="placeholder">
-            <img src="./img/selfie.jpg" alt="Picture 4" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
-        </div>
-    </section>
+            <!-- Registration Form Area -->
+            <div class="hero-form-wrapper fade-up delay-1" id="register">
+                <form class="register-form glass form-bouncy" id="waitlistForm">
+                    <div class="form-header">
+                        <h3>Secure Your Spot</h3>
+                        <p>Sign up now. Roles are verified before launch.</p>
+                    </div>
 
-    <footer>
-        <p>&copy; 2024 Sahayavalan | All rights reserved | Contact: sahayavalanj1@gmail.com</p>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <div class="input-wrapper">
+                            <i class="ph ph-user"></i>
+                            <input type="text" id="name" placeholder="E.g. Valan" required autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <div class="input-wrapper">
+                            <i class="ph ph-phone"></i>
+                            <input type="tel" id="phone" placeholder="+91 98765 43210" required autocomplete="off">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col">
+                            <label for="role">I am a...</label>
+                            <div class="select-wrapper">
+                                <select id="role" required>
+                                    <option value="" disabled selected>Select Role</option>
+                                    <option value="buyer">Buyer</option>
+                                    <option value="farmer">Farmer</option>
+                                </select>
+                                <i class="ph ph-caret-down drop-icon"></i>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <label for="district">District</label>
+                            <div class="select-wrapper">
+                                <select id="district" required>
+                                    <option value="" disabled selected>Select Area</option>
+                                    <option value="chennai">Chennai</option>
+                                    <option value="coimbatore">Coimbatore</option>
+                                    <option value="madurai">Madurai</option>
+                                    <option value="trichy">Tiruchirappalli</option>
+                                    <option value="salem">Salem</option>
+                                </select>
+                                <i class="ph ph-caret-down drop-icon"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit">
+                        <span>Register Now</span>
+                        <i class="ph ph-arrow-right"></i>
+                    </button>
+                </form>
+                
+                <!-- Success Toast -->
+                <div class="success-toast glass hidden" id="successToast">
+                    <div class="success-icon">
+                        <i class="ph-fill ph-check-circle"></i>
+                    </div>
+                    <div>
+                        <h4>Registration Complete!</h4>
+                        <p>We'll notify you when we go live in your area.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Feature Highlights -->
+        <section class="features">
+            <h3 class="section-title fade-up">Powered by Next-Gen Technology</h3>
+            <div class="feature-grid">
+                
+                <div class="feature-card glass fade-up delay-1">
+                    <div class="icon-box"><i class="ph ph-lock-key"></i></div>
+                    <h4>Verified Network</h4>
+                    <p>Every farmer is strictly verified via Aadhaar and Land records by our internal team before they can sell.</p>
+                </div>
+
+                <div class="feature-card glass fade-up delay-2">
+                    <div class="icon-box"><i class="ph ph-wallet"></i></div>
+                    <h4>Fair Platform Pricing</h4>
+                    <p>Powered by Cashfree. Transparent splits meaning you see exactly what goes to the platform and what goes to the farmer.</p>
+                </div>
+
+                <div class="feature-card glass fade-up delay-3">
+                    <div class="icon-box"><i class="ph ph-lightning"></i></div>
+                    <h4>Real-time Market</h4>
+                    <p>Live produce list updates. Instantly see what's fresh and available in your specific hyper-local radius.</p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Pudhuvayal. Made for Tamil Nadu.</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
-</html> 
-
-
+</html>
