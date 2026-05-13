@@ -1,15 +1,56 @@
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- Smooth Scroll Reveal (Intersection Observer) ---
+    // --- Typewriter Effect ---
+    const words = ["Ethical Hacker.", "Security Enthusiast.", "ECE Student.", "Vulnerability Hunter."];
+    let i = 0;
+    let timer;
+    const typeTextTag = document.getElementById("typewriter");
+
+    function typingEffect() {
+        let word = words[i].split("");
+        var loopTyping = function() {
+            if (word.length > 0) {
+                typeTextTag.innerHTML += word.shift();
+            } else {
+                setTimeout(deletingEffect, 2000);
+                return;
+            }
+            timer = setTimeout(loopTyping, 100);
+        };
+        loopTyping();
+    }
+
+    function deletingEffect() {
+        let word = words[i].split("");
+        var loopDeleting = function() {
+            if (word.length > 0) {
+                word.pop();
+                typeTextTag.innerHTML = word.join("");
+            } else {
+                if (words.length > (i + 1)) {
+                    i++;
+                } else {
+                    i = 0;
+                }
+                setTimeout(typingEffect, 500);
+                return;
+            }
+            timer = setTimeout(loopDeleting, 50);
+        };
+        loopDeleting();
+    }
+
+    // Start Typing
+    typingEffect();
+
+
+    // --- Scroll Reveals ---
     const fadeElements = document.querySelectorAll('.fade-up');
     
-    // Create the observer
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                // Optional: Stop observing once revealed
-                // observer.unobserve(entry.target);
             }
         });
     }, {
@@ -17,48 +58,20 @@ document.addEventListener('DOMContentLoaded', () => {
         rootMargin: "0px 0px -50px 0px"
     });
 
-    // Observe all fade-up elements
     fadeElements.forEach(el => observer.observe(el));
 
-    // --- Waitlist Form Handling ---
-    const waitlistForm = document.getElementById('waitlistForm');
-    const successToast = document.getElementById('successToast');
-    const registerBtn = document.querySelector('.btn-submit');
-    const btnText = registerBtn.querySelector('span');
-
-    waitlistForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        // 1. Give Button 'Loading' Feedback
-        btnText.textContent = "Processing...";
-        registerBtn.style.opacity = '0.8';
-        registerBtn.style.pointerEvents = 'none';
-
-        // 2. Simulate network request (fake delay)
-        setTimeout(() => {
-            // Success State
-            waitlistForm.style.opacity = '0';
-            waitlistForm.style.pointerEvents = 'none';
-            waitlistForm.style.transform = 'scale(0.95)';
-
-            // Show Toast
-            successToast.classList.remove('hidden');
-
-            // Reset Form (Background)
-            waitlistForm.reset();
-            btnText.textContent = "Register Now";
-            registerBtn.style.opacity = '1';
-            registerBtn.style.pointerEvents = 'auto';
-
-            // Optional: Hide toast and show form again after some time
-            /*
-            setTimeout(() => {
-                successToast.classList.add('hidden');
-                waitlistForm.style.opacity = '1';
-                waitlistForm.style.pointerEvents = 'auto';
-                waitlistForm.style.transform = 'scale(1)';
-            }, 5000);
-            */
-        }, 1500); 
+    // --- Smooth Scrolling for Anchor Links ---
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if(target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
     });
+
 });

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sahaya Valan J | Portfolio</title>
+    <!-- Modern Tech Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Background grid & glow -->
+    <div class="cyber-bg"></div>
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <nav class="navbar glass">
+        <div class="nav-container">
+            <h1 class="logo">&lt; J S V /&gt;</h1>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="hero-content fade-up">
+                <p class="greeting">Hello, world! I am</p>
+                <h1 class="name">Sahaya Valan J</h1>
+                <div class="typewriter-container">
+                    <span class="typewriter-text" id="typewriter"></span><span class="cursor">|</span>
+                </div>
+                <p class="hero-summary">
+                    Aspiring Ethical Hacker & Cybersecurity Enthusiast pursuing a BE in Electronics & Communication
+                    Engineering. Passionate about penetration testing, network security, and secure coding.
+                </p>
+                <div class="hero-actions">
+                    <a href="./rsume.pdf" download class="btn btn-primary"><i class="ph ph-download-simple"></i>
+                        Resume</a>
+                    <a href="#contact" class="btn btn-outline"><i class="ph ph-paper-plane-tilt"></i> Contact Me</a>
+                </div>
+                <div class="socials">
+                    <a href="https://github.com/SahayaValanJ123/" target="_blank"><i class="ph ph-github-logo"></i></a>
+                    <a href="https://www.linkedin.com/in/sahaya-valan-j-7b4a70293/" target="_blank"><i
+                            class="ph ph-linkedin-logo"></i></a>
+                    <a href="mailto:sahayavalanj1@gmail.com"><i class="ph ph-envelope-simple"></i></a>
+                </div>
+            </div>
+            <div class="hero-image fade-up delay-1">
+                <div class="img-wrapper glass-frame">
+                    <img src="./prof_img.jpg" alt="Sahaya Valan J">
+                </div>
+            </div>
+        </section>
+
+        <!-- Education -->
+        <section id="about" class="section fade-up">
+            <h2 class="section-title"><i class="ph ph-graduation-cap"></i> Education</h2>
+            <div class="glass-card full-width">
+                <h3>Bachelor of Engineering – Electronics and Communication Engineering</h3>
+                <p class="accent">VV College of Engineering, Tamil Nadu (2023 - 2027)</p>
+                <p><strong>Relevant Courses:</strong> Computer Networks, Cybersecurity, Embedded Systems, Ethical
+                    Hacking.</p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section fade-up">
+            <h2 class="section-title"><i class="ph ph-code"></i> Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="glass-card skill-box">
+                    <i class="ph ph-terminal-window skill-icon"></i>
+                    <h3>Programming</h3>
+                    <p>C, Python, PHP, JavaScript, SQL</p>
+                </div>
+                <div class="glass-card skill-box">
+                    <i class="ph ph-shield-check skill-icon"></i>
+                    <h3>Cybersecurity</h3>
+                    <p>Ethical Hacking, Penetration Testing, Network Security</p>
+                </div>
+                <div class="glass-card skill-box">
+                    <i class="ph ph-wrench skill-icon"></i>
+                    <h3>Tools & Platforms</h3>
+                    <p>Kali Linux, Docker, GitHub, Burp Suite, Wireshark</p>
+                </div>
+                <div class="glass-card skill-box">
+                    <i class="ph ph-users-three skill-icon"></i>
+                    <h3>Soft Skills</h3>
+                    <p>Problem-Solving, Analytical Thinking, Team Collaboration</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section fade-up">
+            <h2 class="section-title"><i class="ph ph-folder-open"></i> Projects</h2>
+            <div class="projects-grid">
+                <div class="glass-card project-card hover-glow">
+                    <h3>File Encryption Tool</h3>
+                    <p>Built a Python-based encryption tool for securing files using AES encryption.</p>
+                    <div class="tech-tags">
+                        <span>Python</span><span>AES</span><span>Cryptography</span>
+                    </div>
+                </div>
+                <div class="glass-card project-card hover-glow">
+                    <h3>Secure Password Manager</h3>
+                    <p>Developed a password manager that stores credentials securely using hashing.</p>
+                    <div class="tech-tags">
+                        <span>Security</span><span>Hashing</span>
+                    </div>
+                </div>
+                <div class="glass-card project-card hover-glow">
+                    <h3>CPU Information Tool</h3>
+                    <p>Created a CLI tool to display system hardware details using Python.</p>
+                    <div class="tech-tags">
+                        <span>Python</span><span>CLI</span><span>Systems</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates & Achievements -->
+        <section id="achievements" class="section">
+            <div class="split-layout">
+                <div class="half glass-card fade-up">
+                    <h2><i class="ph ph-certificate"></i> Certificates</h2>
+                    <ul class="list">
+                        <li>LAHTP : Learn the Art of Hacking Through Programming</li>
+                        <li>Python : CLI application development On Linux</li>
+                        <li>Computer Networks and Internet Protocol</li>
+                        <li>Ethical Hacking</li>
+                        <li>Mastering JavaScript</li>
+                    </ul>
+                </div>
+                <div class="half glass-card fade-up delay-1">
+                    <h2><i class="ph ph-trophy"></i> Achievements</h2>
+                    <ul class="list">
+                        <li>Completed "OverTheWire" CTF challenges – Learned Linux privilege escalation.</li>
+                        <li>Participated in HackTheBox and leetcode CTF competitions.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section glass-card contact-section fade-up">
+            <h2>Let's Connect</h2>
+            <p>I am actively seeking opportunities in cybersecurity, software engineering, or penetration testing. My
+                inbox is always open!</p>
+            <div class="contact-methods">
+                <a href="mailto:sahayavalanj1@gmail.com" class="contact-item">
+                    <i class="ph ph-envelope"></i> sahayavalanj1@gmail.com
+                </a>
+                <span class="contact-item">
+                    <i class="ph ph-phone"></i> +91-8248074540
+                </span>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Sahaya Valan J</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
